@@ -12,7 +12,8 @@ var logOptions = {
 	facility: syslog.Facility.User,
     severity: syslog.Severity.Informational,
 };
-var message = " 2020-04-05 21:53:52,602 CKAN1:192.168.0.1 INFO service_list cuongv";
+// var message = " 192.104.132.10 logclient 2020-04-10 00:01:36,319 ERROR main@MainApp:25 java.lang.Exception10"
+var message = " 2020-04-05 21:53:52,602 CKAN1:192.168.0.1 INFO ra=22&cc=ss&error=1";
 client.log(message, logOptions, function(error) {
     if (error) {
         console.error(error);
@@ -21,7 +22,7 @@ client.log(message, logOptions, function(error) {
     }
 });
 
-// lineReader.eachLine('/home/lap12674-local/input', function(line) {
+// lineReader.eachLine('/home/lap12674-local/input2', function(line) {
 //     client.log(" "+line, logOptions, function(error) {
 //         if (error) {
 //             console.error(error);
